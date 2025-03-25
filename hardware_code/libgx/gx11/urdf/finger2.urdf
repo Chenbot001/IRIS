@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="GX11-onefinger2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0053571 0.07198 0.0021328"
+        rpy="0 0 0" />
+      <mass
+        value="0.27151" />
+      <inertia
+        ixx="0.00019576"
+        ixy="5.3175E-06"
+        ixz="1.1061E-05"
+        iyy="0.00027321"
+        iyz="-8.5912E-06"
+        izz="0.00036242" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0343877567351039 -0.0218255061736887 -1.15803200362308E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.0259800201623954" />
+      <inertia
+        ixx="3.93599324991521E-06"
+        ixy="5.40235204916179E-08"
+        ixz="-2.94927169580768E-17"
+        iyy="3.03368719937256E-06"
+        iyz="4.16549638723942E-18"
+        izz="4.29362563855091E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.03682 0.144 0.01147"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.314"
+      upper="2.23"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.00693594209092667 -0.000279377685953965 0.0118671806603896"
+        rpy="0 0 0" />
+      <mass
+        value="0.0176678393044671" />
+      <inertia
+        ixx="1.47006653227034E-06"
+        ixy="-1.17278787190915E-08"
+        ixz="-4.3639670059764E-15"
+        iyy="2.21216244462258E-06"
+        iyz="1.53911525771663E-16"
+        izz="2.71458475514186E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.247058823529412 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.0515 -0.012 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.047"
+      upper="1.047"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.030697 -0.0055029 -0.00022166"
+        rpy="0 0 0" />
+      <mass
+        value="0.022269" />
+      <inertia
+        ixx="3.3922E-06"
+        ixy="4.361E-15"
+        ixz="-1.2761E-16"
+        iyy="2.1477E-06"
+        iyz="-1.1728E-08"
+        izz="2.4778E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0 0.013"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.506"
+      upper="1.885"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.010079 -2.8215E-13 1.3631E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.0024657" />
+      <inertia
+        ixx="5.1836E-07"
+        ixy="-3.436E-18"
+        ixz="2.711E-17"
+        iyy="5.5949E-07"
+        iyz="2.7803E-18"
+        izz="2.1167E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0.036 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.366"
+      upper="2.042"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="6.9389E-18 -0.0089803 -0.014566"
+        rpy="0 0 0" />
+      <mass
+        value="0.0089483" />
+      <inertia
+        ixx="1.086E-06"
+        ixy="7.6979E-23"
+        ixz="1.1079E-22"
+        iyy="1.0997E-06"
+        iyz="-7.6225E-08"
+        izz="4.6236E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://GX11-onefinger2/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="fixed">
+    <origin
+      xyz="0.047 0.0137 0"
+      rpy="0 1.5708 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
