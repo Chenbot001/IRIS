@@ -108,7 +108,7 @@ def train_model(
         device: 训练设备
         save_dir: 模型保存目录
     """
-    scaler = GradScaler()  # 混合精度训练的梯度缩放器
+    scaler = GradScaler('cuda')  # 混合精度训练的梯度缩放器
     best_loss = float('inf')
     
     # 初始化损失函数

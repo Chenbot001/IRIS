@@ -1,0 +1,13 @@
+tqdm
+Pillow
+numpy
+opencv-python
+scipy
+serial
+pyserial
+keyboard
+mediapipe
+pyqtgraph
+PyQt5
+grad-cam
+ikpy
